@@ -437,7 +437,7 @@ section {
 }
 
 .section-bg {
-  background-color: white;
+  background-color: #4f4f4f;
 }
 
 .section-title {
@@ -471,21 +471,22 @@ prsection {
 }
 
 .prsection-bg {
-  background-color: white;
+  background-color: 4f4f4f;
 }
 
 .prsection-title {
   text-align: center;
-  padding-bottom: 30px;
 }
 .prsection-title h2 {
   margin: 15px 0 0 0;
+  margin-top: 50px;
+  padding-bottom: 2px;
   font-size: 32px;
   font-weight: 700;
   color: #5f5950;
 }
 .prsection-title h2 span {
-  color: #46423b;
+  color: #ffff;
 }
 .prsection-title p {
   margin: 15px auto 0 auto;
@@ -566,10 +567,10 @@ prsection {
   font-size: 14px;
   font-weight: 500;
   line-height: 1;
-  color: #444444;
+  color: #fff;
   margin: 0 3px 10px 3px;
   transition: all ease-in-out 0.3s;
-  background: #fff;
+  background: #4f4f4f;
   border: 2px solid #ffb03b;
   border-radius: 50px;
 }
@@ -597,16 +598,6 @@ prsection {
   display: flex;
   position: relative;
 }
-.menu .menu-content::after {
-  content: "............................................................" ".................................................................................................................................................";
-  position: absolute;
-  left: 100px;
-  right: 0;
-  top: -4px;
-  z-index: 1;
-  color: #dad8d4;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-}
 .menu .menu-content a {
   padding-right: 10px;
   background: transparent;
@@ -629,6 +620,7 @@ prsection {
   z-index: 3;
   padding: 0 10px;
   font-weight: 600;
+  color: #fff;
 }
 .menu .pastmenu-content span {
   background: transparent;
@@ -636,6 +628,7 @@ prsection {
   z-index: 3;
   padding: 0 10px;
   font-weight: 600;
+  color: #fff;
 }
 .menu .menu-ingredients {
   font-style: italic;
