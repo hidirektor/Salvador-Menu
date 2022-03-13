@@ -1,16 +1,10 @@
-/**
-* Template Name: Delicious - v4.7.1
-* Template URL: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
   font-family: "Poppins", sans-serif;
   color: #444444;
+  background: url(https://salvadorcoffeefood.com/assets/img/pasta52.png);
 }
 
 a {
@@ -470,6 +464,39 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Product Sections General
+--------------------------------------------------------------*/
+prsection {
+  padding: 60px 0;
+}
+
+.prsection-bg {
+  background-color: white;
+}
+
+.prsection-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.prsection-title h2 {
+  margin: 15px 0 0 0;
+  font-size: 32px;
+  font-weight: 700;
+  color: #5f5950;
+}
+.prsection-title h2 span {
+  color: #46423b;
+}
+.prsection-title p {
+  margin: 15px auto 0 auto;
+  font-weight: 300;
+}
+@media (min-width: 1024px) {
+  .prsection-title p {
+    width: 50%;
+  }
+}
+/*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
 .breadcrumbs {
@@ -562,10 +589,18 @@ section {
   justify-content: space-between;
   position: relative;
 }
+.menu .pastmenu-content {
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+}
 .menu .menu-content::after {
-  content: "......................................................................" "...................................................................." "....................................................................";
+  content: "............................................................" ".................................................................................................................................................";
   position: absolute;
-  left: 20px;
+  left: 100px;
   right: 0;
   top: -4px;
   z-index: 1;
@@ -574,14 +609,29 @@ section {
 }
 .menu .menu-content a {
   padding-right: 10px;
-  background: #fff;
+  background: transparent;
+  position: relative;
+  z-index: 3;
+  font-weight: 650;
+  color: #ff9b08;
+}
+.menu .pastmenu-content a {
+  padding-right: 10px;
+  background: transparent;
   position: relative;
   z-index: 3;
   font-weight: 700;
   color: #ff9b08;
 }
 .menu .menu-content span {
-  background: #fff;
+  background: transparent;
+  position: relative;
+  z-index: 3;
+  padding: 0 10px;
+  font-weight: 600;
+}
+.menu .pastmenu-content span {
+  background: transparent;
   position: relative;
   z-index: 3;
   padding: 0 10px;
@@ -604,10 +654,10 @@ section {
   color: #fff;
   font-size: 14px;
   text-align: center;
-  padding: 30px 0;
+  padding: 20px 0;
 }
 #footer h3 {
-  font-size: 36px;
+  font-size: 48px;
   font-weight: 700;
   color: #ffb03b;
   position: relative;
@@ -621,20 +671,20 @@ section {
   margin: 0 0 40px 0;
 }
 #footer .social-links {
-  margin: 0 0 40px 0;
+  margin: 0 0 15px 0;
 }
 #footer .social-links a {
-  font-size: 18px;
+  font-size: 58px;
   display: inline-block;
-  background: #46423b;
+  background: #35322d;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
   border-radius: 50%;
   text-align: center;
-  width: 36px;
-  height: 36px;
+  width: 72px;
+  height: 72px;
   transition: 0.3s;
 }
 #footer .social-links a:hover {
@@ -645,4 +695,18 @@ section {
 }
 #footer .credits {
   font-size: 13px;
+}
+
+.center {
+  display: block;
+  margin-top: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.txtcenter {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -5px;
 }
